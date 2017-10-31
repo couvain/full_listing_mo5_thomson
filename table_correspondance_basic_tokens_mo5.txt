@@ -1,0 +1,159 @@
+Table de correspondance "tokens" Basic MO5 Thomson <-> mots-clefs MO5 - Basic
+Copyright (C) 2017 David Chardonnet
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+--------------------------------------------------------------------------------------
+Structure du fichier BASIC Thomson MO5 enregistré sur cassette sans protection.
+
+5 octets en début de fichier: ff 03 72 25 ab (non déchiffrés)
+
+puis numéro de ligne sur 2 octets
+puis code source (avec tokens à décoder)
+puis octet 00
+puis 2 octets (non déchiffrés)
+
+puis numero de ligne...
+--------------------------------------------------------------------------------------
+Table de correspondance "tokens" Basic MO5 Thomson <-> mots-clefs MO5 - Basic
+
+
+80 -> END
+81 -> FOR
+82 -> NEXT
+83 -> DATA
+84 -> DIM
+85 -> READ
+86 -> 
+87 bb -> GOTO
+87 bc -> GOSUB
+88 -> RUN
+89 -> IF
+8a -> RESTORE
+8b -> RETURN
+8c -> REM
+8d -> 
+8e -> STOP
+8f -> ELSE
+90 -> TRON
+91 -> TROFF
+92 -> DEFSTR
+93 -> DEFINT
+94 -> DEFSNG
+95 -> 
+96 -> ON
+97 -> 
+98 -> ERROR
+99 -> RESUME
+9a -> AUTO
+9b -> DELETE
+9c -> LOCATE
+9d -> CLS
+9e -> CONSOLE
+9f -> PSET
+a0 -> MOTOR
+a1 -> SKIPF
+a2 -> EXEC
+a3 -> BEEP
+a4 -> COLOR
+a5 -> LINE
+a6 -> BOX
+a7 -> 
+a8 -> ATTRB
+a9 -> DEF
+aa -> POKE
+ab -> PRINT
+ac -> CONT
+ad -> LIST
+ae -> CLEAR
+af -> 
+b0 -> 
+b1 -> NEW
+b2 -> SAVE
+b3 -> LOAD
+b4 -> MERGE
+b5 -> OPEN
+b6 -> CLOSE
+b7 -> INPEN
+b8 -> PEN
+b9 -> PLAY
+ba -> 
+bb -> GOTO / TO (dans le cas d'un FOR)
+bc -> 
+bd -> 
+be -> 
+bf -> USING
+c0 -> USR
+c1 -> ERL
+c2 -> ERR
+c3 -> OFF
+c4 -> THEN
+c5 -> NOT
+c6 -> STEP
+c7 -> +
+c8 -> -
+c9 -> *
+ca -> /
+cb -> 
+cc -> AND
+cd -> OR
+ce -> XOR
+cf -> EQV
+d0 -> IMP
+d1 -> MOD
+d2 -> @
+d3 -> >
+d4 -> =
+d5 -> <
+
+ff 80 -> SGN
+ff 81 -> INT
+ff 82 -> ABS
+ff 83 -> FRE
+ff 84 -> SQR
+ff 85 -> LOG
+ff 86 -> EXP
+ff 87 -> COS
+ff 88 -> SIN
+ff 89 -> TAN
+ff 8a -> PEEK
+ff 8b -> LEN
+ff 8c -> STR$
+ff 8d -> VAL
+ff 8e -> ASC
+ff 8f -> CHR$
+ff 90 -> EOF
+ff 91 -> CINT
+ff 92 -> 
+ff 93 -> 
+ff 94 -> FIX
+ff 95 -> HEX$
+ff 96 -> 
+ff 97 -> STICK
+ff 98 -> STRIG
+ff 99 -> GR$
+ff 9a -> LEFT$
+ff 9b -> RIGHT$
+ff 9c -> MID$
+ff 9d -> INSTR
+ff 9e -> VARPTR
+ff 9f -> RND
+ff a0 -> INKEY$
+ff a1 -> INPUT
+ff a2 -> CSRLIN
+ff a3 -> POINT
+ff a4 -> SCREEN
+ff a5 -> POS
+ff a6 -> PTRIG
